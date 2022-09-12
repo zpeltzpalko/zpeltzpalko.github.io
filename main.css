@@ -1,0 +1,141 @@
+body {
+    font-family: Impact;
+    color: #313131;
+}
+
+.headerbar{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.headerbar a {
+    float: left;
+    color: #6f6f6f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.headerbar a:hover {
+    background-color: rgb(232, 232, 232);
+    color: #313131;
+}
+
+.headerbar a.active {
+    background-color: rgb(190, 190, 190);
+    color: #313131;
+    overflow: hidden; 
+}
+
+.headerlist {
+    list-style-type: none;
+}
+
+.picture {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 25px
+}
+
+.pictures {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.icons {
+    width: 25px;
+    margin: 25px;
+    overflow: hidden;
+    float: left;
+}
+
+.tablestyle {
+    margin-top: -30px;
+    padding: 5px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    height: auto;
+    width: auto;
+    gap: 10px;
+    padding: 10px;
+    justify-content: start;
+    align-content: space-evenly;
+}
+
+.header { 
+    grid-area: header; 
+    height: 75px;
+}
+.menu { 
+    grid-area: menu;
+    grid-auto-flow: column; 
+    align-content: top;
+    width: 150px;
+    margin-top: 2%;
+    padding-right: 30px;
+}
+.main { 
+    grid-area: main;
+    align-content: top;
+    width: 400px;
+    margin: 12px;
+    padding-left: 15px;
+    
+}
+.right { 
+    grid-area: right; 
+    height: 400px;
+    width: 150px;
+
+}
+.footer { 
+    grid-area: footer;
+    height: 25px;
+    align-content: end;
+}
+
+#bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+div p a:link{
+    color: #0492ea;
+ text-decoration: underline;
+}
+
+div p a:hover{
+    color: #ea8304;
+ text-decoration: underline;
+}
+
+div p a:visited{
+    color: #0492ea;
+ text-decoration: underline;
+}
+
+td a:link {
+ color: #313131;
+ text-decoration: none;
+}
+
+td a:hover {
+    color: #ea8304;
+    text-decoration: underline;
+}
+td a:visited {
+    color: #313131;
+    text-decoration: underline;
+}
+
