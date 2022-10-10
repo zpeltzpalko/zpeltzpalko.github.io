@@ -1,11 +1,16 @@
-body {
-    font-family: Impact;
-    color: #313131;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;;
 }
 
+/* Header Bar Styling */
 .headerbar{
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+}
+.headerbar ul {
+    display: flex;
 }
 
 .headerbar a {
@@ -15,98 +20,113 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-
+}
 .headerbar a:hover {
     background-color: rgb(232, 232, 232);
     color: #313131;
 }
-
 .headerbar a.active {
     background-color: rgb(190, 190, 190);
     color: #313131;
     overflow: hidden; 
 }
 
-.headerlist {
-    list-style-type: none;
+.headerbar .flex {
+    justify-content: space-between;
 }
 
-.picture {
+/* Utilities */
+.container_headerbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px; 
+}
+.container_grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
     width: 100%;
-    padding: 14px 16px;
-    margin: 25px
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "photo main main"
+    "sidebar main main"
+    "sidebar main main";
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+/* Grid Styling */
+.main {
+    width: 100%;
+    grid-area: main;
+    
+}
+.photo {
+    width: 100%;
+    grid-area: photo;
+}
+.sidebar {
+    width: 100%;
+    grid-area: sidebar;
+}
+
+/* Specific Element Styling */
+.picture {
+    min-width: 100px;
+    max-width: 250px;
+    width: 100%;
 }
 
 .pictures {
-    width: 300px;
-    height: 200px;
+    width: 100%;
     object-fit: contain;
 }
-
 .icons {
-    width: 25px;
-    margin: 25px;
+    width: 20px;
+    margin: 20px;
     overflow: hidden;
     float: left;
 }
-
 .tablestyle {
-    margin-top: -30px;
-    padding: 5px;
     text-align: left;
     font-size: 12px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'menu main main main right right'
-      'menu footer footer footer footer footer';
-    height: auto;
-    width: auto;
-    gap: 10px;
-    padding: 10px;
-    justify-content: start;
-    align-content: space-evenly;
+
+body {
+    font-family: Impact;
+    color: #313131;
+}
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px, 0;
 }
 
-.header { 
-    grid-area: header; 
-    height: 75px;
+p {
+    margin: 5px 0;
 }
-.menu { 
-    grid-area: menu;
-    grid-auto-flow: column; 
-    align-content: top;
-    width: 150px;
-    margin-top: 2%;
-    padding-right: 30px;
+ul {
+    list-style-type: none;
 }
-.main { 
-    grid-area: main;
-    align-content: top;
-    width: 400px;
-    margin: 12px;
-    padding-left: 15px;
-    
-}
-.right { 
-    grid-area: right; 
-    height: 400px;
-    width: 150px;
-
-}
-.footer { 
-    grid-area: footer;
-    height: 25px;
-    align-content: end;
-}
-
-#bottom{
-    position: absolute;
-    bottom: 0;
+img {
     width: 100%;
 }
 
@@ -114,22 +134,18 @@ div p a:link{
     color: #0492ea;
  text-decoration: underline;
 }
-
 div p a:hover{
     color: #ea8304;
  text-decoration: underline;
 }
-
 div p a:visited{
     color: #0492ea;
  text-decoration: underline;
 }
-
 td a:link {
  color: #313131;
  text-decoration: none;
 }
-
 td a:hover {
     color: #ea8304;
     text-decoration: underline;

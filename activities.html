@@ -8,26 +8,32 @@
     <title> Zachary Peltz-Palko's Website</title>
     <link rel="stylesheet" href="main.css">
     <meta name="description" content="Personal Website">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
 </head>
 
 <body>
-    <!-- Builds Container and adds the template-->
-    <div class="grid-container">
-        <!-- Header Bar and header container -->
-        <div class="headerbar header">
-            <ul class="headerlist">
+    <!-- Header Bar and header container -->
+    <div class="headerbar header">
+        <div class="container_headerbar flex">
+            <ul>
                 <li><a href="index.html"> Zachary Peltz-Palko </a></li>
                 <li><a class="active" href="activities.html"> Activities </a></li>
                 <li><a href="resume.html"> Resume </a></li>
             </ul>
         </div>
-        <!-- Sidebar and menu container -->
-        <div class="menu">
+    </div>
+
+    <div class="container_grid grid">
+        <!-- Photo in Sidebar -->
+        <div class="photo">
             <img src="images/Zack_Headshot_2022.jpg" alt="headshot" class="picture">
+        </div>
+        <!-- Table of logos and links -->
+        <div class="sidebar">
             <table class="tablestyle">
                 <tr>
                     <td><img src="images/location_icon.webp" alt="location icon" class="icons"></td>
-                    <td> Pittsburgh, PA </td>
+                    <td> Pittsburgh, PA</td>
                 </tr>
                 <tr>
                     <td><img src="images/email_icon.png" alt="email icon" class="icons"></td>
@@ -46,27 +52,25 @@
         <!-- Main Container-->
         <div class="main">
             <h1> Activities </h1>
-            <p> <ul> 
+            <ul> 
                 <li> Rock Climing</li>
                 <li> Photography</li>
                 <li> Biking </li>
-            </ul></p>
-            <p> &nbsp;</p>
+            </ul>
             <table>
                 <tr>
-                    <td><img src="images/Zach-5_Original.jpeg" alt="Me Climbing!" class="pictures"></td>
+                    <td><img class = "picture" src="images/Zach-5_Original.jpeg" alt="Me Climbing!" class="pictures"></td>
                 </tr> 
                 <tr>
                     <td style="text-align: center;"><p> Me Climbing in Red River Gorge!</p></td>
                 </tr>
-            </table>
+            </table> 
         </div>
-        <!-- Right side container-->
-        <div class="right"></div>
-        <div class="footer">
-            <div style="text-align: center;" id="bottom"> Created by Zachary Peltz-Palko</div>
-        </div>
-    </div>  
-</body>
 
+    </div>
+        <!-- Footer-->
+        <div>
+            <div style="text-align: center;"> Created by Zachary Peltz-Palko</div>
+        </div>  
+</body>
 </html>
