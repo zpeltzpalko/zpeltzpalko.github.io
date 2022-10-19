@@ -137,10 +137,7 @@ div p a:hover{
     color: #ea8304;
  text-decoration: underline;
 }
-div p a:visited{
-    color: #0492ea;
- text-decoration: underline;
-}
+
 td a:link {
  color: #313131;
  text-decoration: none;
