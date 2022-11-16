@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+h5 {
+    text-align: center;
+    padding: 25px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 100px;
+    margin: auto;
+}
+
+.colorCard {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    outline: 1.5px solid;
+}
+
+.buttons {
+    text-align: center;
+    background-color: #696969;
+    width: 275px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    outline: 1.5px solid;
+}
+
+.buttons div {
+    padding: 15px;
+
+}
+
+.buttons button {
+    padding: 3px;
+}
+
+.cOne {
+    background-color: #FFFFFF; 
+}
+
+.cTwo {
+    background-color: #FFFFFF; 
+}
+
+.cThree {
+    background-color: #FFFFFF; 
+}
+
+.cFour {
+    background-color: #FFFFFF;   
+}
+
+.hexValue {
+    background-color: #FFFFFF;
+    max-width: 85%;
+    width: 125px;
+    margin: auto;
+    margin-top: 5px;
+    outline: 1.5px solid;
+}

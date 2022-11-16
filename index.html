@@ -12,73 +12,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="CSS/main.css">
 
     <title> Zachary Peltz-Palko's Website</title>
 </head>
 
 <body>
-    <!-- Header Bar and header container -->
-    <div class="headerbar header">
-        <div class="container_headerbar flex">
-            <ul>
-                <li><a class="active" href="index.html"> Zachary Peltz-Palko </a></li>
-                <li><a href="activities.html"> Activities </a></li>
-                <li><a href="resume.html"> Resume </a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container_grid grid">
-        <!-- Photo in Sidebar -->
-        <div class="photo">
-            <img src="images/Zack_Headshot_2022.jpg" alt="headshot" class="picture">
-        </div>
-        <!-- Table of logos and links -->
-        <div class="sidebar">
-            <table class="tablestyle">
-                <tr>
-                    <td><img src="images/location_icon.webp" alt="location icon" class="icons"></td>
-                    <td> Pittsburgh, PA</td>
-                </tr>
-                <tr>
-                    <td><img src="images/email_icon.png" alt="email icon" class="icons"></td>
-                    <td><a href="mailto:zpeltzpalko@gmail.com"> Email </a></td>
-                </tr>
-                <tr>
-                    <td><img src="images/linkedin_icon.png" alt="linkedin icon" class="icons"></td>
-                    <td><a href="https://www.linkedin.com/in/zachary-peltz-palko/"> LinkedIn </a></td>
-                </tr>
-                <tr>
-                    <td><img src="images/github_icon.png" alt="github icon" class="icons"></td>
-                    <td><a href="https://github.com/zpeltzpalko"> Github </a></td>
-                </tr>
-            </table>
-        </div>
-        <!-- Main Container-->
-        <div class="main">
-            <div>
-                <h1> About </h1>
-                <p> Howdy! I'm Zack Peltz-Palko. I am a new graduate of the University of Pittsburgh. I hold a BSBA in
-                    <a href="https://cba.pitt.edu/academics/business-majors/supply-chain-management/">Supply Chain
-                        Managment</a> and
-                    <a href="https://cba.pitt.edu/academics/business-majors/business-information-systems/"> Business
-                        Information Systems</a>. I enjoy supply chain optimization and analytics. I have taken up a
-                    recent interest in computer science as well.
-                </p>
-                <p> &nbsp;</p>
-                <p> Feel free to click around and explore the site!</p>
-                <p> &nbsp;</p>
-                <p> The Resume tab has my resume with my work experience. Should you want to reach out, use the email
-                    link in the sidebar or the email on my resume. </p>
+    <nav class="navbar">
+        <h1 class="logo"> Zachary Peltz-Palko</h1>
+        <ul class="nav_buttons">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="HTML/projects.html">projects</a></li>
+            <li><a href="HTML/resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="container_2grid">
+            <h1 class="column">Hi, I'm Zack &#128075;</h1>
+            <img class="column" src="images/Zack_Headshot_2022.jpg" alt="Picture of Zack">
+        </section>
+        <section class="container_gen">
+            <p> I am a recent Pitt grad with a BSBA in <a
+                    href="https://cba.pitt.edu/academics/business-majors/business-information-systems/"
+                    target="_blank">Business Information Systems</a> and <a
+                    href="https://cba.pitt.edu/academics/business-majors/supply-chain-management/"
+                    target="_blank">Supply Chain</a>.</p>
+            <div class="container_2grid">
+                <h2>Interests</h2>
+                <table>
+                    <tr>
+                        <td>Climbing</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee</td>
+                    </tr>
+                    <tr>
+                        <td>Photography</td>
+                    </tr>
+                </table>
             </div>
-        </div>
-
-    </div>
-    <!-- Footer-->
-    <div>
-        <div style="text-align: center;"> Created by Zachary Peltz-Palko</div>
-    </div>
+            <div class="container_2grid">
+                <h2>Skills</h2>
+                <table>
+                    <tr>
+                        <td>Stellar Communication</td>
+                    </tr>
+                    <tr>
+                        <td>Project Managment</td>
+                    </tr>
+                    <tr>
+                        <td>Narrative Writing and Reporting</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container_2grid">
+                <h2>Tools and Tech</h2>
+                <table>
+                    <tr>
+                        <td>Microsoft Office Suite</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS/JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <table>
+            <tr>
+                <td><a href="https://www.linkedin.com/in/zachary-peltz-palko/"><img src="./images/linkedin_icon.png" alt=""></a></td>
+                <td><a href="https://github.com/zpeltzpalko"><img src="./images/github_icon.png" alt=""></a></td>
+                <td><a href="mailto:zpeltzpalko@gmail.com"><img src="./images/email_icon.png" alt=""></a></td>
+            </tr>
+        </table>
+        <p>Designed by: Zack Peltz-Palko</p>
+    </footer>
 </body>
 
 </html>

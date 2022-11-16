@@ -1,0 +1,143 @@
+/* Color Pallet */
+/* #a14a21 - Copper
+#cd722d - Dark Autumn Gold
+#e9d1a0 - Very Light Gold
+#969a7e - Fern Green
+#5a612b - Hunter Green
+#33341c - Dark Avacado Green */
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    color: #33341c;
+    background-color: #e9d1a066;
+    font-family:'Poppins';
+}
+
+a {
+    color: #969a7e;
+}
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+/* Header Bar Styling */
+.navbar {
+    background-color: #e9d1a0;
+    color: #33341c;
+    min-height: 50px;
+    margin: auto;
+    padding-top: 10px;
+	padding-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav_buttons{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+.nav_buttons a{
+   text-transform: uppercase;
+   text-align: center;
+   display:block;
+   justify-content: space-between;
+   padding: 10px;
+   text-decoration: none;
+   color: #33341c;
+}
+
+.nav_buttons a:hover {
+    background-color: #969a7e;
+}
+
+.logo {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    padding-left: 10px;
+}
+
+/* Utilities */
+
+.container_2grid {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding: 1rem;
+}
+.container_gen {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    text-align: center;
+    margin: auto;
+}
+.column {
+    float: left;
+    width: 50%;
+    margin: auto;
+}
+
+.footer {
+    background-color: #e9d1a0;
+    width: 100%;
+    height: 100px;
+    max-height: 150px;
+    text-align: center;
+}
+.footer table {
+    margin: auto;
+}
+
+.footer td {
+    padding: 10px;
+}
+
+.footer img {
+    max-height: 32px;
+    height: 100%;
+}
+
+.noPadding {
+    padding: 0;
+    margin: 0;
+}
+/* Media Queries */
+
+@media (min-width: 769px) {
+    .navbar, 
+    .nav_buttons,
+    .footer {
+        display: flex;
+    }
+
+    .navbar,
+    .footer {
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navbar, 
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

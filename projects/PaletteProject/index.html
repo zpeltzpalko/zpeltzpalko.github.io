@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <title>Palette Builder v1.0</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Palette Builder v1.0</h1>
+    </nav>
+    <div class="container">
+        <div class="colorCard cOne" id="cOne">
+            <div class="hexValue">
+                <h3>Hex:</h3>
+                <p id="valueHex1"> </p>
+            </div>
+        </div>
+        <div class="colorCard cTwo" id="cTwo">
+            <div class="hexValue">
+                <h3>Hex:</h3>
+                <p id="valueHex2"> </p>
+            </div>
+        </div>
+        <div class="colorCard cThree" id="cThree">
+            <div class="hexValue">
+                <h3>Hex:</h3>
+                <p id="valueHex3"> </p>
+            </div>
+        </div>
+        <div class="colorCard cFour" id="cFour">
+            <div class="hexValue">
+                <h3>Hex:</h3>
+                <p id="valueHex4"> </p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <div>
+            <h2>Get Random Colors</h2>
+            <button id="btn" onclick="getBgColor()"> Random </button>
+        </div>
+        <div>
+            <h2>Get Monochrome </h2>
+            <button id="btn" onclick="getMonoColor()">Monochrome</button>
+        </div>
+    </div>
+    <h5><a href="https://zpeltzpalko.github.io" target="_blank">Built by: Zack Peltz-Palko</a></h5>
+    <script src="main.js"></script>
+</body>
+
+</html>
