@@ -1,21 +1,11 @@
 /* Color Pallet */
 :root {
-    --main-orange: #e66005;
-    --medium-orange: #8c3a03;
-    --medium-green: #0e6035;
-    --dark-green: #094425;
-    --creme: #FFFEF2;
-    --light-brown: #ae9d64;
+    --dark-green-blue: #051821;
+    --dark-green: #1A4645;
+    --light-green: #266867;
+    --orange: #F58800;
+    --mustard-yellow: #F8BC24;
 
-    --green-1: #4f9c29;
-    --green-2: #2d5817;
-    --green-3: #1b360e;
-    --green-4: #13270a;
-
-    --orange-1: #db5f01;
-    --orange-2: #c55500;
-    --orange-3: #a14500;
-    --orange-4: #602900;
 }
 
 
@@ -23,7 +13,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: var(--orange-3);
+    color: var(--dark-green-blue);
     /* background-color: var(--creme); */
     font-family:'Poppins';
 
@@ -33,7 +23,7 @@ body {
 
 
 a {
-    color: var(--green-2);
+    color: var(--light-green);
 }
 ul {
     list-style-type: none;
@@ -48,14 +38,13 @@ h1 {
 }
 /* Header Bar Styling */
 .navbar {
-    color: var(--orange-2);
-    background-color: var(--green-3);
+    color: var(--orange);
+    background-color: var(--dark-green);
     min-height: 50px;
     padding-top: 15px;
 	padding-bottom: 15px;
     width: 100%;
     justify-content: center;
-    
 }
 
 .nav_buttons{
@@ -76,7 +65,7 @@ h1 {
 }
 
 .nav_buttons a:hover {
-    background-color: var(--orange-3);
+    background-color: var(--light-green);
     width: fit-content;
     margin: auto;
 }
@@ -96,8 +85,17 @@ h1 {
     max-width: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
+}
+
+.container_2grid h1 {
+    text-align: right;
+}
+
+.container_2grid h2 {
+    text-align: center;
 }
 .container_gen {
     width: 80%;
@@ -105,22 +103,40 @@ h1 {
     display: grid;
     text-align: center;
     margin: auto;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
 }
+
 .column {
-    float: left;
     width: 50%;
     margin: auto;
+    border-radius: 6rem;
+}
+.column_left {
+    float: left;
+    display: grid;
+    width: 50%;
+    margin: auto;
+    margin-top: auto;
+}
+.column_right {
+    float: right;
+    display: grid;
+    width: 50%;
+    margin: auto;
+    margin-top: auto;
+}
+.column_left p {
+    padding-right: 3rem;
+    text-align:left;
+}
+.column_left h2 {
+    padding-right: 1.8rem;
+    text-align: left;
+}
+.column_right img {
     border-radius: 1.25rem;
 }
 
-.column p {
-    padding-right: 1rem;
-    text-align: left;
-}
-.column img {
-    border-radius: 1.25rem;
-}
 
 .footer {
     width: 100%;
@@ -159,6 +175,14 @@ h1 {
 .noPadding {
     padding: 0;
     margin: 0;
+}
+
+.fa-style {
+    font-size: 36px;
+    color: var(--orange);
+    width: 36px;
+    height: 36px;
+    
 }
 /* Media Queries */
 
